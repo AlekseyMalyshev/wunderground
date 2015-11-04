@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Underground</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="//bootswatch.com/slate/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Weather Underground</h2>
+        </div>
+        <div class="col-sm-12">
+          <form class="form-horizontal" id="get-weather">
+            <input type="text" id="country" placeholder="state/country">
+            <input type="text" id="city" placeholder="City">
+            <input type="text" id="zip" placeholder="zip">
+            <button type="reset">Clear</button>
+            <button type="submit">Update</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <hr class="colorgraph">
+          <div class="current hidden">
+            <select class="pull-right" id="c-f">
+              <option value="C">C</option>
+              <option value="F" selected>F</option>
+            </select>
+            Currently in <span id="city"></span>
+            <img id="icon" src="">
+            <span id="temp"></span>
+          </div>
+          <hr class="colorgraph">
+        </div>
+        <div class="forecast">
+          <div class="col-sm-3">
+            <div class="dayf" id="f0">
+              <div id="date"></div>
+              <div class="icon">
+                <img id="icon" src="">
+              </div>
+              <div class="temp">
+                <div>
+                  High: <span id="h-temp"></span>
+                </div>
+                <div>
+                  Low: <span id="l-temp"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="dayf" id="f1">
+              <div id="date"></div>
+              <div class="icon">
+                <img id="icon" src="">
+              </div>
+              <div class="temp">
+                <div>
+                  High: <span id="h-temp"></span>
+                </div>
+                <div>
+                  Low: <span id="l-temp"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="dayf" id="f2">
+              <div id="date"></div>
+              <div class="icon">
+                <img id="icon" src="">
+              </div>
+              <div class="temp">
+                <div>
+                  High: <span id="h-temp"></span>
+                </div>
+                <div>
+                  Low: <span id="l-temp"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="dayf" id="f3">
+              <div id="date"></div>
+              <div class="icon">
+                <img id="icon" src="">
+              </div>
+              <div class="temp">
+                <div>
+                  High: <span id="h-temp"></span>
+                </div>
+                <div>
+                  Low: <span id="l-temp"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

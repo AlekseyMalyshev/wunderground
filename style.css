@@ -1,0 +1,22 @@
+
+h2 {
+  text-align: center;
+}
+
+div.dayf {
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+div.dayf div#date {
+  text-align: center;
+  font-weight: bold;
+}
+
+div.icon,
+div.temp {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+}
